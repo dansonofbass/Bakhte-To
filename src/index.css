@@ -14,3 +14,37 @@
     @apply font-pixel;
   }
 }
+
+@layer utilities {
+  .animate-float-slow {
+    animation: float-slow 3s ease-in-out infinite;
+  }
+
+  .animate-shine {
+    animation: shine 2s ease-in-out infinite;
+  }
+
+  .animate-text-shine {
+    @apply inline-block;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes shine {
+  0%, 100% {
+    opacity: 0.5;
+    text-shadow: none;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fcfcfc;
+  }
+}

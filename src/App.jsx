@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-const API_URL = 'http://localhost:5173/api'
+const API_URL = 'http://localhost:3000/api'
 
 function App() {
   const [activeGame, setActiveGame] = useState(null)
@@ -504,13 +504,13 @@ function App() {
                 <div className="flex gap-4 w-[clamp(250px,90%,300px)] justify-center">
                   <button
                     onClick={handleClaimDiscount}
-                    className="bg-[#133e94] hover:bg-[#c20d0d] px-8 py-3 rounded-lg font-semibold transition-all duration-500 hover:scale-105 hover:border-[3px] hover:border-white flex-1"
+                    className="bg-[#133e94] text-white px-8 py-3 rounded-lg font-semibold transition-all duration-500 hover:scale-105 hover:border-[3px] hover:border-white flex-1"
                   >
                     Claim Discount
                   </button>
                   <button
                     onClick={handleDeclineDiscount}
-                    className="bg-[#c20d0d] hover:bg-[#0d0d0d] px-8 py-3 rounded-lg font-semibold transition-all duration-500 hover:scale-105 hover:border-[3px] hover:border-white flex-1"
+                    className="bg-[#c20d0d] text-white px-8 py-3 rounded-lg font-semibold transition-all duration-500 hover:scale-105 hover:border-[3px] hover:border-white flex-1"
                   >
                     Decline
                   </button>
